@@ -1,5 +1,5 @@
 /**
- * @zos/ui - zOS UI Components
+ * @z-os/ui - zOS UI Components
  *
  * Core UI components for building zOS desktop environments.
  * Built on @hanzo/ui for a consistent design system.

@@ -1,5 +1,5 @@
 {
-  "name": "@zos/ui",
+  "name": "@z-os/ui",
   "version": "1.0.0",
   "description": "zOS UI Components - Window chrome, dock, menu bar. Built on @hanzo/ui",
   "main": "dist/index.js",
