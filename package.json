@@ -1,0 +1,85 @@
+{
+  "name": "@zos/ui",
+  "version": "1.0.0",
+  "description": "zOS UI Components - Window chrome, dock, menu bar. Built on @hanzo/ui",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./window": {
+      "import": "./dist/components/window/index.mjs",
+      "require": "./dist/components/window/index.js",
+      "types": "./dist/components/window/index.d.ts"
+    },
+    "./dock": {
+      "import": "./dist/components/dock/index.mjs",
+      "require": "./dist/components/dock/index.js",
+      "types": "./dist/components/dock/index.d.ts"
+    },
+    "./menubar": {
+      "import": "./dist/components/menubar/index.mjs",
+      "require": "./dist/components/menubar/index.js",
+      "types": "./dist/components/menubar/index.d.ts"
+    },
+    "./hooks": {
+      "import": "./dist/hooks/index.mjs",
+      "require": "./dist/hooks/index.js",
+      "types": "./dist/hooks/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@hanzo/ui": "^1.0.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "lucide-react": "^0.300.0",
+    "tailwind-merge": "^2.0.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "eslint": "^8.0.0",
+    "tailwindcss": "^3.4.0"
+  },
+  "keywords": [
+    "zos",
+    "ui",
+    "components",
+    "window",
+    "dock",
+    "menubar",
+    "macos",
+    "hanzo"
+  ],
+  "author": "Hanzo AI",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zOS4-2/ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zOS4-2/ui/issues"
+  },
+  "homepage": "https://github.com/zOS4-2/ui#readme"
+}
